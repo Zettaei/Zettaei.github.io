@@ -1,10 +1,15 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import appRouters from "./routes/main"
+import "./global.css"
+import globalContext from './context/global'
+import config from "../config.js";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <globalContext.Provider value={config}>
+      <RouterProvider router={createBrowserRouter(appRouters)} />
+    </globalContext.Provider>
+  </>
+  ,
 )
