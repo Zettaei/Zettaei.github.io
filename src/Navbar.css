@@ -1,0 +1,16 @@
+:root {
+    --primary-gold: rgb(243, 192, 24);
+}
+
+.Menubar-Highlight {
+    background-image: linear-gradient(90deg,
+        black 70%, transparent 84.5%, transparent 85.5%, black 100%
+    );
+}
+
+.Highlight-line {
+    background-image: 
+    linear-gradient(90deg,
+        transparent 82%, var(--primary-gold) 82%, var(--primary-gold) 87.5%, transparent 87.5%
+    )
+}

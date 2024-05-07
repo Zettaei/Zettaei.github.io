@@ -1,6 +1,4 @@
-interface navbarButton {
+interface NavbarButton {
     label: string;
     description: string;
 }
-
-export default navbarButton

@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import Navbar from "../Navbar";
 const App = lazy(() => import("../pages/App"));
-const Profile = lazy(() => import("../pages/Profile"));
+import Profile from "../pages/Profile";
 
 export default
 [
